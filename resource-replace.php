@@ -149,7 +149,14 @@ function resource_replace_options_page(){
 	</div>
 <?
 }
-
+function rsource_replace_settings_link($links) { 
+	$settings_link = '<a href="options-general.php?page=resource-replace-admin">Settings</a>'; 
+  	array_unshift($links, $settings_link); 
+  	return $links; 
+}
+ 
+$plugin = plugin_basename(__FILE__); 
+add_filter("plugin_action_links_$plugin",'rsource_replace_settings_link' );
 add_filter( 'style_loader_src', 'resource_replace_css');
 add_filter( 'style_loader_src', 'resource_replace_js');
 add_action( 'admin_menu', 'resource_replace_settings_page' );
