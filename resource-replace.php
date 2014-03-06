@@ -20,11 +20,9 @@ function in_ignores($src){
     $rr_t_options = get_option('resource_replace_option',$rr_defaults);
     foreach ($rr_t_options['rr_ignore_paths'] as $key => $value) {
         if( preg_match($value, $src) ){
-            error_log("match $src");
             return true;
         }
     }
-    error_log("no-match $src");
     return false;
 }
 
