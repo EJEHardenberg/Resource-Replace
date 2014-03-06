@@ -19,7 +19,7 @@ $rr_defaults = array('rr_css_domain' => '', 'rr_js_domain' => '','rr_version_kil
 function in_ignores($src){
     $rr_t_options = get_option('resource_replace_option',$rr_defaults);
     foreach ($rr_t_options['rr_ignore_paths'] as $key => $value) {
-	if(!empty($value))}
+	if(!empty($value)){
 	        if( preg_match($value, $src) ){
         	    return true;
 	        }
