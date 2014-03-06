@@ -116,7 +116,7 @@ function register_resource_replace_settings() {
 
         add_settings_field(
             'rr_version_kill', 
-            'Remove ?ver= from urls', 
+            'Remove ?ver= and ?version from urls', 
             'rr_ver_kill_callback', 
             'resource-replace-admin', 
             'resource_section_id'
