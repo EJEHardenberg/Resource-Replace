@@ -17,7 +17,7 @@ $rr_options = array();
 $rr_defaults = array('rr_css_domain' => '', 'rr_js_domain' => '','rr_version_kill' => '0');
 
 function resource_replace_css($src){
-	if( is_admin() ) return $url;
+	if( is_admin() ) return $src;
 
 	$rr_t_options = get_option('resource_replace_option',$rr_defaults);
 	if(!empty($rr_t_options['rr_css_domain'])){
@@ -30,7 +30,7 @@ function resource_replace_css($src){
 	return $src;
 }
 function resource_replace_js($src){
-	if( is_admin() ) return $url;
+	if( is_admin() ) return $src;
 
 	$rr_t_options = get_option('resource_replace_option',$rr_defaults);
 	if(!empty($rr_t_options['rr_js_domain'])){
