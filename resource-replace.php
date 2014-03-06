@@ -139,6 +139,9 @@ function resource_replace_options_page(){
 	<div class="wrap">
 		<?php screen_icon(); ?>
 		<h2>Resource Replace Options</h2>
+		<p>
+			The domain name that will be replaced: <span style="font-weight:bolder; color: red;"><?php echo site_url(); ?></span>
+		</p>
 		<form method="post" action="options.php"> 
 			<?php 
 				settings_fields( 'resource_replace_option_group' ); 
