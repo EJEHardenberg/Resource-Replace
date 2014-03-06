@@ -202,7 +202,7 @@ $plugin = plugin_basename(__FILE__);
 add_filter("plugin_action_links_$plugin", 'rsource_replace_settings_link' );
 
 add_filter( 'style_loader_src', 'resource_replace_css');
-add_filter( 'style_loader_src', 'resource_replace_js');
+add_filter( 'script_loader_src', 'resource_replace_js');
 add_action( 'admin_menu', 'resource_replace_settings_page' );
 add_action( 'admin_init', 'register_resource_replace_settings' );
 register_uninstall_hook(__FILE__, 'resource_replace_uninstall');
