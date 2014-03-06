@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: Resource Replace
-Plugin URI: git@git.bear-code.com:localvore
+Plugin URI: https://github.com/EJEHardenberg/Resource-Replace
 Description: Replaces script and css sources included via wp_enqueue's domain name with what you specify.
 Author: Ethan J. Eldridge
 Version: 0.1
